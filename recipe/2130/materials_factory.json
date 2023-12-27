@@ -69,7 +69,7 @@
         "from": "materials factory",
         "output_per_day": 0.0666,
         "input_per_day": {
-            "quartz_solution" : 0.0666,
+            "quartz_solution": 0.0666,
             "synthetic_resin": 0.0333
         }
     },
@@ -81,35 +81,35 @@
             "tholin_gel": 0.1
         }
     },
-    "carbon_fibers_tow" : {
+    "carbon_fibers_tow": {
         "from": "materials factory",
         "output_per_day": 0.0333,
         "input_per_day": {
-            "thermoplastic" : 0.1,
-            "synthetic_resin" : 0.0666
+            "thermoplastic": 0.1,
+            "synthetic_resin": 0.0666
         }
     },
-    "coolant" : {
+    "coolant": {
         "from": "materials factory",
         "output_per_day": 0.1333,
         "input_per_day": {
-            "polymer" : 0.1333
+            "polymer": 0.1333
         }
     },
     "neural_connectors": {
         "from": "materials factory",
         "output_per_day": 0.0333,
         "input_per_day": {
-            "thermoplastic" : 0.1,
-            "gold_wire" : 0.0666
+            "thermoplastic": 0.1,
+            "gold_wire": 0.0666
         }
     },
-    "thermoplastic" : {
+    "thermoplastic": {
         "from": "materials factory",
         "output_per_day": 0.1333,
         "input_per_day": {
-            "silica" : 0.1333,
-            "cellulose_algae" : 0.2
+            "silica": 0.1333,
+            "cellulose_algae": 0.2
         }
     }
 }
