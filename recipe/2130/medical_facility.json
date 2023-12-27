@@ -1,0 +1,103 @@
+{
+    "antibacterial_pill" :{
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "antibacterial_solution" : 0.0666,
+            "silica" : 0.0333
+        }
+    },
+    "antibacterial_solution" :{
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "microbial_culture" : 0.0333,
+            "tholins" : 0.0333,
+            "hyper_bacterial_culture" : 0.0333
+        }
+    },
+    "antiviral_pill" :{
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "antiviral_solution" : 0.0666,
+            "silica" : 0.0333
+        }
+    },
+    "antiviral_solution" :{
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "microbial_culture" : 0.0333,
+            "tholins" : 0.0333,
+            "k1ll-411_virus_culture" : 0.0333
+        }
+    },
+    "bioleds": {
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "thorium": 0.0666,
+            "cellulose_algae": 0.0666
+        }
+    },
+    "bone_growth_material": {
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "regenerative_solution": 0.0666,
+            "high_fiber_tissue": 0.0333
+        }
+    },
+    "complete_meal_paste": {
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "lean_protein_tissue": 0.0333,
+            "high_fiber_tissue": 0.0333,
+            "carbos_tissue": 0.0333
+        }
+    },
+    "microbial_culture": {
+        "from": "medical facility",
+        "output_per_day" : 0.0666,
+        "input_per_day" : {
+            "polymer": 0.0333,
+            "silica": 0.0333
+        }
+    },
+    "organ_replacements": {
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "regenerative_solution": 0.0666,
+            "lean_protein_tissue": 0.0333
+        }
+    },
+    "regen_gel": {
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "regenerative_solution": 0.0666,
+            "silica": 0.0333
+        }
+    },
+    "regenerative_solution": {
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "microbial_culture": 0.0333,
+            "tholins": 0.0333,
+            "primordial_algae": 0.0333
+        }
+    },
+    "worker's_meal_bar": {
+        "from": "medical facility",
+        "output_per_day" : 0.0333,
+        "input_per_day" : {
+            "lean_protein_tissue": 0.0333,
+            "energy_rich_tissue": 0.0333,
+            "carbos_tissue": 0.0333
+        }
+    }
+}
