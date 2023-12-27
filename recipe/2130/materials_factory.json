@@ -1,0 +1,115 @@
+{
+    "quartz_solution": {
+        "from": "materials factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "silica": 0.0333,
+            "polymer": 0.0333
+        }
+    },
+    "synthetic_resin": {
+        "from": "materials factory",
+        "output_per_day": 0.1333,
+        "input_per_day": {
+            "silica": 0.1333
+        }
+    },
+    "green_quartz_crystal": {
+        "from": "materials factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "polymer": 0.0666,
+            "quartz_solution": 0.0333,
+            "silica": 0.0333
+        }
+    },
+    "actuators": {
+        "from": "materials factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "titanum": 0.0333,
+            "gold": 0.0333
+        }
+    },
+    "tholin_gel": {
+        "from": "materials factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "tholins": 0.0666,
+            "silica": 0.0333
+        }
+    },
+    "tholins": {
+        "from": "materials factory",
+        "output_per_day": 0.1333,
+        "input_per_day": {
+            "polymer": 0.0666,
+            "primordial_algae": 0.0666
+        }
+    },
+    "blue_quartz_crystal": {
+        "from": "materials factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "polymer": 0.0666,
+            "quartz_solution": 0.0333,
+            "silica": 0.0333
+        }
+    },
+    "red_quartz_crystal": {
+        "from": "materials factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "polymer": 0.0666,
+            "quartz_solution": 0.0333,
+            "silica": 0.0333
+        }
+    },
+    "binary_quark_gate": {
+        "from": "materials factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "quartz_solution" : 0.0666,
+            "synthetic_resin": 0.0333
+        }
+    },
+    "bio_memory_cells": {
+        "from": "materials factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "thermoplastic": 0.0666,
+            "tholin_gel": 0.1
+        }
+    },
+    "carbon_fibers_tow" : {
+        "from": "materials factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "thermoplastic" : 0.1,
+            "synthetic_resin" : 0.0666
+        }
+    },
+    "coolant" : {
+        "from": "materials factory",
+        "output_per_day": 0.1333,
+        "input_per_day": {
+            "polymer" : 0.1333
+        }
+    },
+    "neural_connectors": {
+        "from": "materials factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "thermoplastic" : 0.1,
+            "gold_wire" : 0.0666
+        }
+    },
+    "thermoplastic" : {
+        "from": "materials factory",
+        "output_per_day": 0.1333,
+        "input_per_day": {
+            "silica" : 0.1333,
+            "cellulose_algae" : 0.2
+        }
+    }
+}
