@@ -1,0 +1,26 @@
+{
+    "silica": {
+        "from": "gatherers",
+        "output_per_day": 0.3333
+    },
+    "polymer": {
+        "from": "gatherers",
+        "output_per_day": 0.3333
+    },
+    "titanum": {
+        "from": "gatherers",
+        "output_per_day": 0.3333
+    },
+    "gold": {
+        "from": "gatherers",
+        "output_per_day": 0.3333
+    },
+    "steel": {
+        "from": "gatherers",
+        "output_per_day": 0.3333
+    },
+    "thorium": {
+        "from": "gatherers",
+        "output_per_day": 0.3333
+    }
+}
