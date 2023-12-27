@@ -1,38 +1,38 @@
 {
-    "carbos_tissue" : {
-        "from" : "vat farm",
-        "output_per_day" : 0.3333,
-        "input_per_day" : {
-            "cellulose_algae" : 0.3333
+    "carbos_tissue": {
+        "from": "vat farm",
+        "output_per_day": 0.3333,
+        "input_per_day": {
+            "cellulose_algae": 0.3333
         }
     },
-    "concentrated_vitamins" : {
-        "from" : "vat farm",
-        "output_per_day" : 0.3333,
-        "input_per_day" : {
-            "cellulose_algae" : 0.3333
+    "concentrated_vitamins": {
+        "from": "vat farm",
+        "output_per_day": 0.3333,
+        "input_per_day": {
+            "cellulose_algae": 0.3333
         }
     },
-    "energy_rich_tissue" : {
-        "from" : "vat farm",
-        "output_per_day" : 0.3333,
-        "input_per_day" : {
-            "primordial_algae" : 0.3333
+    "energy_rich_tissue": {
+        "from": "vat farm",
+        "output_per_day": 0.3333,
+        "input_per_day": {
+            "primordial_algae": 0.3333
         }
     },
-    "high_fiber_tissue" : {
-        "from" : "vat farm",
-        "output_per_day" : 0.3333,
-        "input_per_day" : {
-            "primordial_algae" : 0.1666,
-            "cellulose_algae" : 0.1666
+    "high_fiber_tissue": {
+        "from": "vat farm",
+        "output_per_day": 0.3333,
+        "input_per_day": {
+            "primordial_algae": 0.1666,
+            "cellulose_algae": 0.1666
         }
     },
-    "lean_protein_tissue" : {
-        "from" : "vat farm",
-        "output_per_day" : 0.3333,
-        "input_per_day" : {
-            "primordial_algae" : 0.3333
+    "lean_protein_tissue": {
+        "from": "vat farm",
+        "output_per_day": 0.3333,
+        "input_per_day": {
+            "primordial_algae": 0.3333
         }
     }
 }

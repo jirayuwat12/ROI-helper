@@ -1,17 +1,17 @@
 {
-    "cellulose_algae" : {
+    "cellulose_algae": {
         "from": "cultivation farm",
         "output_per_day": 0.3333
     },
-    "hyper_bacterial_culture" : {
+    "hyper_bacterial_culture": {
         "from": "cultivation farm",
         "output_per_day": 0.3333
     },
-    "k1ll-411_virus_culture" : {
+    "k1ll-411_virus_culture": {
         "from": "cultivation farm",
         "output_per_day": 0.3333
     },
-    "primordial_algae" : {
+    "primordial_algae": {
         "from": "cultivation farm",
         "output_per_day": 0.3333
     }
