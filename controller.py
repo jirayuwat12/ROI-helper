@@ -199,5 +199,10 @@ class Controller:
         '''show factory list'''
         factory_list = factory_dic.items()
         factory_list = sorted(factory_list, key=lambda x: x[1]["from"], reverse=True)
+        current_from = factory_list[0][1]["from"]
+        print(f"\t{current_from.upper()}:")
         for obj, factory in factory_list:
-            print(f"\t{obj} from {factory['from'].upper()} : {round(factory['factory'],1)} factory")
+            if factory["from"] != current_from:
+                current_from = factory["from"]
+                print(f"\t{current_from.upper()}:")
+            print(f"\t\t{obj} : {round(factory['factory'],1)} factory")
