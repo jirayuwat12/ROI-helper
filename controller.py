@@ -168,7 +168,7 @@ class Controller:
             return
 
         for demand in self.demands:
-            print(f"{demand} - {round(self.demands[demand]*30,2)} per month")
+            print(f"\t{demand} - {round(self.demands[demand]*30,2)} per month")
 
 
     def set_version(self, version):
