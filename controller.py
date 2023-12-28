@@ -25,6 +25,7 @@ class Controller:
 
         self.current_project = ''
         self.demands = {} # dictionay - key: demand name, value: amount_per_day
+        self.dirty_flag = False
 
 
     def run(self):
@@ -82,6 +83,11 @@ class Controller:
 
     def close_project(self):
         '''close current project'''
+        if self.dirty_flag:
+            choice = input("Do you want to save current project? (y/n)? ")
+            if choice.lower() == 'y':
+                self.save_project()
+        self.dirty_flag = False
         self.current_project = ''
         self.demands = {}
         print("Project closed")
@@ -116,6 +122,8 @@ class Controller:
             self.demands[demand_name] = amount_per_day
             print("Demand created")
 
+        self.dirty_flag = True
+
 
     def delete_demand(self, demand_name):
         '''delete demand by name'''
@@ -124,6 +132,8 @@ class Controller:
             print("Demand deleted")
         else:
             print("Demand not found")
+
+        self.dirty_flag = True
 
 
     def plan_demand(self, demand_name, amount_per_day):
