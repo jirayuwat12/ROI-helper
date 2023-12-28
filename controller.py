@@ -213,7 +213,6 @@ class Controller:
                 continue
             
 
-
     def show_demand(self):
         '''show demand'''
         if len(self.demands) == 0:
