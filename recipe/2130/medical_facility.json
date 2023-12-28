@@ -91,7 +91,7 @@
             "primordial_algae": 0.0333
         }
     },
-    "worker's_meal_bar": {
+    "workers_meal_bar": {
         "from": "medical facility",
         "output_per_day" : 0.0333,
         "input_per_day" : {
