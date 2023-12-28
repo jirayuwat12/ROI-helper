@@ -1,0 +1,100 @@
+{
+    "blue_gamma_laser":{
+        "from":"basic components factory",
+        "output_per_day":0.0333,
+        "input_per_day":{
+            "blue_quartz_crystal":0.0666,
+            "bioleds":0.0666,
+            "steel_cases":0.0333
+        }
+    },
+    "grav_field_generator":{
+        "from":"basic components factory",
+        "output_per_day":0.0666,
+        "input_per_day":{
+            "quartz_solution":0.0666,
+            "titanium_cases":0.0333
+        }
+    },
+    "green_subatomic_laser":{
+        "from":"basic components factory",
+        "output_per_day":0.0333,
+        "input_per_day":{
+            "green_quartz_crystal":0.0666,
+            "bioleds":0.0333,
+            "steel_cases":0.0333
+        }
+    },
+    "hodagrium":{
+        "from":"basic components factory",
+        "output_per_day":0.0666,
+        "input_per_day":{
+            "titanium":0.0333,
+            "steel":0.0333,
+            "gold":0.0333
+        }
+    },
+    "micro_chips":{
+        "from":"basic components factory",
+        "output_per_day":0.0666,
+        "input_per_day":{
+            "silicon":0.0333,
+            "gold":0.0333
+        }
+    },
+    "nano_chips":{
+        "from":"basic components factory",
+        "output_per_day":0.0333,
+        "input_per_day":{
+            "micro_chips":0.0666,
+            "binary_quark_gate":0.0666,
+            "thermoplastics":0.0333
+        }
+    },
+    "nuclear_power_cells":{
+        "from":"basic components factory",
+        "output_per_day":0.0333,
+        "input_per_day":{
+            "thorium_rods":0.0333,
+            "hodagrium":0.0333
+        }
+    },
+    "red-anti-matter_laser":{
+        "from":"basic components factory",
+        "output_per_day":0.0333,
+        "input_per_day":{
+            "red_quartz_crystal":0.0666,
+            "bioleds":0.0666,
+            "steel_cases":0.0333
+        }
+    },
+    "steel_cases":{
+        "from":"basic components factory",
+        "output_per_day":0.0666,
+        "input_per_day":{
+            "steel":0.0666
+        }
+    },
+    "superconductors":{
+        "from":"basic components factory",
+        "output_per_day":0.0666,
+        "input_per_day":{
+            "hodagrium":0.0333,
+            "coolant":0.0333
+        }
+    },
+    "thorium_rods":{
+        "from":"basic components factory",
+        "output_per_day":0.0666,
+        "input_per_day":{
+            "thorium":0.0666
+        }
+    },
+    "titanium_cases":{
+        "from":"basic components factory",
+        "output_per_day":0.0666,
+        "input_per_day":{
+            "titanium":0.0333
+        }
+    }
+}
