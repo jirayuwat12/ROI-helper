@@ -40,7 +40,11 @@ if __name__ == "__main__":
             print("Please provide a amount_per_day")
             sys.exit(0)
     else:
-        factory_dic = get_fact_dic(arg.parse_args())
+        factory_dic = get_fact_dic({
+            "name": arg.parse_args().name,
+            "amount": arg.parse_args().amount_per_day,
+            "version": arg.parse_args().version
+        })
 
         print(f"Result for {arg.parse_args().name} ({eval(arg.parse_args().amount_per_day)*30:.2f} per month):")
         factory_list = factory_dic.items()

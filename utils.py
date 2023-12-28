@@ -3,17 +3,17 @@ from recipe import get_recipe
 def get_fact_dic(args):
     queue = []
 
-    recipe = get_recipe(version = args.version)
+    recipe = get_recipe(version = args['version'])
 
-    if args.name not in recipe:
+    if args['name'] not in recipe:
         print("Target object not found")
         return
 
     factory_dic = {}
 
     # object_name, multiplier
-    exec(f"args.amount_per_day = float({args.amount_per_day})")
-    queue.append((args.name, args.amount_per_day / recipe[args.name]["output_per_day"]))
+    exec(f"args['amount_per_day'] = float({args['amount_per_day']})")
+    queue.append((args['name'], args['amount_per_day'] / recipe[args['name']]["output_per_day"]))
     while len(queue) > 0:
         obj, multiplier = queue.pop(0)
 
