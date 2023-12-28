@@ -147,6 +147,7 @@ class Controller:
 
         print(f"Result for {demand_name} - {round(amount_per_day*30,2)} per month:")
         self.show_fact_list(factory_dic)
+        self.build_factory(factory_dic)
 
 
     def get_fact(self):
@@ -169,6 +170,48 @@ class Controller:
         
         print(f"Result for current demands:")
         self.show_fact_list(factory_dic)
+        self.build_factory(factory_dic)
+
+
+    def build_factory(self, factory_dic):
+        '''build factory from given factory dictionary'''
+        chioce = input("Do you want to open marker for build factory? (y/n)? ")
+        if not (chioce.lower() == 'y'):
+            return
+        factory_dic = factory_dic.items()
+        factory_dic = sorted(factory_dic, key=lambda x: x[1]["from"], reverse=True)
+
+        while True:
+            if len(factory_dic) == 0:
+                print("No factory to build")
+                break
+            else:
+                print("")
+
+            idx = 0
+            current_from = factory_dic[0][1]["from"]
+            print(f"\t{current_from.upper()}:")
+            for obj, factory in factory_dic:
+                if factory["from"] != current_from:
+                    current_from = factory["from"]
+                    print(f"\t{current_from.upper()}:")
+                print(f"\t\t({idx}) {obj} : {round(factory['factory'],1)} factory")
+                idx += 1
+            print("\t(q) Quit")
+
+            choice = input("Choose factory that already built: ")
+            if choice.lower() == 'q':
+                break
+            try:
+                choice = int(choice)
+                if choice < 0 or choice >= len(factory_dic):
+                    raise Exception
+                factory_dic.pop(choice)
+                print(f"Factory id {choice} removed")
+            except:
+                print("Invalid choice")
+                continue
+            
 
 
     def show_demand(self):
