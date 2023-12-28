@@ -12,16 +12,20 @@ class Controller:
             "projects" : self.list_projects,
             "demands": self.list_demands,
             "edit_demand": self.edit_demand,
+            "delete_demand": self.delete_demand,
             "plan_demand": self.plan_demand,
             "get_fact": self.get_fact,
             "show_demand": self.show_demand,
             "set_version": self.set_version,
             "save": self.save_project,
-            "exit": self.exit
+            "exit": self.exit,
+            "" : lambda: None
         }
+        self.version = "2130"
+
         self.current_project = ''
         self.demands = {} # dictionay - key: demand name, value: amount_per_day
-        self.version = "2130"
+
 
     def run(self):
         while True:
@@ -48,6 +52,8 @@ class Controller:
         '''show available commands'''
         print("Available commands:")
         for command in self.COMMAND_DIC.keys():
+            if command == '':
+                continue
             print('\t',command,'.'*(15-len(command)), self.COMMAND_DIC[command].__doc__)
 
 
@@ -111,6 +117,15 @@ class Controller:
             print("Demand created")
 
 
+    def delete_demand(self, demand_name):
+        '''delete demand by name'''
+        if demand_name in self.demands:
+            del self.demands[demand_name]
+            print("Demand deleted")
+        else:
+            print("Demand not found")
+
+
     def plan_demand(self, demand_name, amount_per_day):
         '''plan demand from given amount per day'''
         amount_per_day = float(eval(str(amount_per_day)))
@@ -119,11 +134,9 @@ class Controller:
             "amount_per_day": amount_per_day,
             "version": self.version
         })
-        print(f"Result for {demand_name} ({amount_per_day*30:.2f} per month):")
-        factory_list = factory_dic.items()
-        factory_list = sorted(factory_list, key=lambda x: x[1]["from"], reverse=True)
-        for obj, factory in factory_list:
-            print(f"\t{obj} from {factory['from'].upper()} : {round(factory['factory'],1)} factory")
+
+        print(f"Result for {demand_name} - {round(amount_per_day*30,2)} per month:")
+        self.show_fact_list(factory_dic)
 
 
     def get_fact(self):
@@ -140,12 +153,12 @@ class Controller:
                     factory_dic[obj] = temp[obj]
                 else:
                     factory_dic[obj]["factory"] += temp[obj]["factory"]
-
+        if len(factory_dic) == 0:
+            print("No demands")
+            return
+        
         print(f"Result for current demands:")
-        factory_list = factory_dic.items()
-        factory_list = sorted(factory_list, key=lambda x: x[1]["from"], reverse=True)
-        for obj, factory in factory_list:
-            print(f"\t{obj} from {factory['from'].upper()} : {round(factory['factory'],1)} factory")
+        self.show_fact_list(factory_dic)
 
 
     def show_demand(self):
@@ -181,3 +194,10 @@ class Controller:
         '''exit program'''
         sys.exit(0)
 
+
+    def show_fact_list(self, factory_dic):
+        '''show factory list'''
+        factory_list = factory_dic.items()
+        factory_list = sorted(factory_list, key=lambda x: x[1]["from"], reverse=True)
+        for obj, factory in factory_list:
+            print(f"\t{obj} from {factory['from'].upper()} : {round(factory['factory'],1)} factory")
