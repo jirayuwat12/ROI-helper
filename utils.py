@@ -6,7 +6,7 @@ def get_fact_dic(args):
     recipe = get_recipe(version = args['version'])
 
     if args['name'] not in recipe:
-        print("Target object not found")
+        print(f"Target object not found ({args['name']})")
         return
 
     factory_dic = {}
