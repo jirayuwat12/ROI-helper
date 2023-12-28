@@ -1,0 +1,126 @@
+{
+    "actuators": {
+        "from": "robotics factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "titanium": 0.0333,
+            "gold": 0.0333
+        }
+    },
+    "auxiliary-arm_extension": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "cyberlimb_mechanism": 0.0333,
+            "nuclear_power_cells": 0.0333
+        }
+    },
+    "collector_bot": {
+        "from": "robotics factory",
+        "output_per_day": 0.0222,
+        "input_per_day": {
+            "red_quartz_crystal": 0.0222,
+            "light_robot_frame": 0.0222,
+            "nuclear_power_cells": 0.0222
+        }
+    },
+    "cyberlimb_mechanism": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "actuators": 0.0333,
+            "steel_struts": 0.0333
+        }
+    },
+    "gold_wire": {
+        "from": "robotics factory",
+        "output_per_day": 0.1333,
+        "input_per_day": {
+            "gold": 0.1333
+        }
+    },
+    "heavy_construction_bot": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "green_quartz_crystal": 0.0333,
+            "heavy_robot_frame": 0.0333,
+            "nuclear_power_cells": 0.0333
+        }
+    },
+    "heavy_lifring_cyberleg": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "cyberlimb_mechanism": 0.0333,
+            "nuclear_power_cells": 0.0333,
+            "titanium_struts": 0.0333
+        }
+    },
+    "heavy_mover_bot": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "grav_field_generator": 0.0333,
+            "heavy_robot_frame": 0.0333,
+            "nuclear_power_cells": 0.0333
+        }
+    },
+    "heavy_robot_frame": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "actuators": 0.0333,
+            "titanium": 0.0333
+        }
+    },
+    "light_construction_bot": {
+        "from": "robotics factory",
+        "output_per_day": 0.0222,
+        "input_per_day": {
+            "green_quartz_crystal": 0.0222,
+            "light_robot_frame": 0.0222,
+            "nuclear_power_cells": 0.0222
+        }
+    },
+    "light_robot_frame": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "actuators": 0.0333,
+            "steel_struts": 0.0333,
+            "micro_chips": 0.0333
+        }
+    },
+    "medi-bot": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "blue_quartz_crystal": 0.0333,
+            "light_robot_frame": 0.0333,
+            "generative_solution": 0.0333
+        }
+    },
+    "steel_struts": {
+        "from": "robotics factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "steel": 0.1
+        }
+    },
+    "titanium_struts": {
+        "from": "robotics factory",
+        "output_per_day": 0.0666,
+        "input_per_day": {
+            "titanium": 0.0333
+        }
+    },
+    "utility_cyberarm": {
+        "from": "robotics factory",
+        "output_per_day": 0.0333,
+        "input_per_day": {
+            "cyberlimb_mechanism": 0.0333,
+            "blue_quartz_crystal": 0.0333
+        }
+    }
+}
