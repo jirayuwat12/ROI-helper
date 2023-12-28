@@ -14,6 +14,7 @@ class Controller:
             "edit_demand": self.edit_demand,
             "plan_demand": self.plan_demand,
             "get_fact": self.get_fact,
+            "show_demand": self.show_demand,
             "set_version": self.set_version,
             "save": self.save_project,
             "exit": self.exit
@@ -112,14 +113,13 @@ class Controller:
 
     def plan_demand(self, demand_name, amount_per_day):
         '''plan demand from given amount per day'''
-        amount_per_day = float(eval(amount_per_day))
-
+        amount_per_day = float(eval(str(amount_per_day)))
         factory_dic = get_fact_dic({
             "name": demand_name,
             "amount_per_day": amount_per_day,
             "version": self.version
         })
-        print(f"Result for {demand_name} ({eval(amount_per_day)*30:.2f} per month):")
+        print(f"Result for {demand_name} ({amount_per_day*30:.2f} per month):")
         factory_list = factory_dic.items()
         factory_list = sorted(factory_list, key=lambda x: x[1]["from"], reverse=True)
         for obj, factory in factory_list:
@@ -146,6 +146,16 @@ class Controller:
         factory_list = sorted(factory_list, key=lambda x: x[1]["from"], reverse=True)
         for obj, factory in factory_list:
             print(f"\t{obj} from {factory['from'].upper()} : {round(factory['factory'],1)} factory")
+
+
+    def show_demand(self):
+        '''show demand'''
+        if len(self.demands) == 0:
+            print("No demands")
+            return
+
+        for demand in self.demands:
+            print(f"{demand} - {round(self.demands[demand]*30,2)} per month")
 
 
     def set_version(self, version):
