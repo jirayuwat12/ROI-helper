@@ -8,7 +8,7 @@ def get_fact_dic(args):
     if args.name not in recipe:
         print("Target object not found")
         return
-    
+
     factory_dic = {}
 
     # object_name, multiplier
@@ -16,7 +16,7 @@ def get_fact_dic(args):
     queue.append((args.name, args.amount_per_day / recipe[args.name]["output_per_day"]))
     while len(queue) > 0:
         obj, multiplier = queue.pop(0)
-        
+
         if obj not in factory_dic:
             factory_dic[obj] = {
                 "from": recipe[obj]["from"],
@@ -30,4 +30,3 @@ def get_fact_dic(args):
             queue.append((need, multiplier * (recipe[obj]["input_per_day"][need] / recipe[need]["output_per_day"])))
 
     return factory_dic
-
