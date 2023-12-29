@@ -2,6 +2,17 @@
 
 This is python program that help **Rise of Industry (ROI)** player tocalculate the nessessary amount of factory to produce a certain amount of demand.
 
+## Table of Contents
+- [ROI-helper](#roi-helper)
+  - [Table of Contents](#table-of-contents)
+  - [How to use ?](#how-to-use-)
+    - [Use the program directly](#use-the-program-directly)
+      - [Example to plan individual demands](#example-to-plan-individual-demands)
+      - [Example to plan multiple demands](#example-to-plan-multiple-demands)
+    - [Use the program with command line](#use-the-program-with-command-line)
+      - [Example to plan individual demands](#example-to-plan-individual-demands-1)
+  - [For Your Information](#for-your-information)
+  
 ## How to use ?
 There are 2 ways to use this program.
 1. Use the program directly
