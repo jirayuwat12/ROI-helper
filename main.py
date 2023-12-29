@@ -42,7 +42,7 @@ if __name__ == "__main__":
     else:
         factory_dic = get_fact_dic({
             "name": arg.parse_args().name,
-            "amount": arg.parse_args().amount_per_day,
+            "amount_per_day": arg.parse_args().amount_per_day,
             "version": arg.parse_args().version
         })
 
